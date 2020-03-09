@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
                             width: 80.0,
                             height: 80.0,
                             child: CircleAvatar(
-                              backgroundImage: NetworkImage('https://cdn.pixabay.com/photo/2017/02/16/23/10/smile-2072907_1280.jpg'),
+                              backgroundImage: NetworkImage('https://cdn.pixabay.com/photo/2016/11/22/21/42/adult-1850703_1280.jpg'),
                             ),
                           ),
                           Padding(padding: EdgeInsets.all(8.0)),
