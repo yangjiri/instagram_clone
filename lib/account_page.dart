@@ -29,20 +29,49 @@ class _AccountPageState extends State<AccountPage> {
         padding: EdgeInsets.all(16.0),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Column(
               children: <Widget>[
                 Stack(
                   children: <Widget>[
                     SizedBox(
-                        width: 80.0,
+                      width: 80.0,
                       height: 80.0,
                       child: CircleAvatar(
                         backgroundImage: NetworkImage('https://cdn.pixabay.com/photo/2016/11/22/21/42/adult-1850703_1280.jpg'),
                       ),
-                    )
+                    ),
+                    Container(
+                      width: 80.0,
+                          height: 80.0,
+                      alignment: Alignment.bottomRight,
+                      child:Stack(
+                        alignment: Alignment.center,
+                        children: <Widget>[
+                          SizedBox(
+                            width: 28.0,
+                            height: 28.0,
+                            child: FloatingActionButton(onPressed: null,
+                              backgroundColor: Colors.white,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 25.0,
+                            height: 25.0,
+                            child: FloatingActionButton(onPressed: null,
+                              backgroundColor: Colors.blue,
+                              child: Icon(Icons.add),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                   ],
 
+                ),
+                Padding(
+                    padding: EdgeInsets.all(8.0)
                 ),
                 Text('name',
                       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.9),
